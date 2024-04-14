@@ -35,9 +35,8 @@ jobs:
           haxelib setup "%HAXELIB_ROOT%"
           haxelib install lime 7.9.0
           haxelib install openfl
-          haxelib install flixel
+          haxelib --never install flixel
           haxelib run lime setup flixel
-          haxelib run lime setup
           haxelib install flixel-tools
           haxelib install flixel-addons
           haxelib install flixel-ui
