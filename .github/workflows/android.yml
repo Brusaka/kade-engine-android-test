@@ -24,11 +24,11 @@ jobs:
           java-version: 11
       - uses: android-actions/setup-android@v2
         with:
-          haxe-version: 4.1.5
+          haxe-version: 4.3.4
       # Runs a set of commands using the runners shell
       - name: script run line haha
         run: |
-          haxe install --version 4.1.5 -y
+          haxe install --version 4.3.4 -y
           RefreshEnv
           mkdir "%HAXELIB_ROOT%"
           haxelib setup "%HAXELIB_ROOT%"
