@@ -16,8 +16,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: nttld/setup-ndk@vr21e
+      - uses: nttld/setup-ndk@v1
+      ndk-version: r21e
       - uses: actions/setup-java@v1
+      java-version: 11
       - uses: android-actions/setup-android@v2
         with:
           haxe-version: 4.1.5
